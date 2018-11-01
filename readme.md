@@ -1,5 +1,12 @@
 ### LaTex
 
+
+
+LaTeX is a high-quality typesetting system; it includes features designed for the production of technical and scientific documentation. LaTeX is the de facto standard for the communication and publication of scientific documents. LaTeX is available as [free software](https://www.latex-project.org/lppl/).
+
+
+
+```
 /Users/oudream/Library/texlive
 /Users/oudream/Library/texmf
 
@@ -23,4 +30,7 @@ Loading xeCJK will abort! For immediate help type H <return>.
 \newcommand*{\fangsong}{\CJKfamily{zhfs}} % 仿宋
 \newcommand*{\lishu}{\CJKfamily{zhli}}    % 隶书
 \newcommand*{\youyuan}{\CJKfamily{zhyou}} % 幼圆
+```
+
+
 
