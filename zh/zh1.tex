@@ -1,0 +1,93 @@
+\documentclass[12pt,article]{memoir}
+\usepackage{amsmath}
+\usepackage{xeCJK}
+\setCJKmainfont[BoldFont={STHeiti},ItalicFont=STKaiti]{STSong}
+\setCJKsansfont{STHeiti}
+\setCJKmonofont{STFangsong}
+\setCJKfamilyfont{zhsong}{STSong}
+\setCJKfamilyfont{zhhei}{STHeiti}
+\setCJKfamilyfont{zhkai}{STKaiti}
+\setCJKfamilyfont{zhfs}{STFangsong}
+\setCJKfamilyfont{zhli}{LiSu}
+\setCJKfamilyfont{zhyou}{YouYuan}
+\newcommand*{\songti}{\CJKfamily{zhsong}} % 宋体
+\newcommand*{\heiti}{\CJKfamily{zhhei}}   % 黑体
+\newcommand*{\kaishu}{\CJKfamily{zhkai}}  % 楷书
+\newcommand*{\fangsong}{\CJKfamily{zhfs}} % 仿宋
+\newcommand*{\lishu}{\CJKfamily{zhli}}    % 隶书
+\newcommand*{\youyuan}{\CJKfamily{zhyou}} % 幼圆
+
+\begin{document}
+
+\chapter*{Matrices}
+
+There are a couple of equivalent xxx-yyy ways to show matrices. Choose whichever you prefer, but please be consistent.
+
+The \textsf{amsmath} package defines 中 the \texttt{matrix} environment and its friends:
+\begin{align*}
+	&
+	\begin{matrix}
+		a & b\\
+		c & d
+	\end{matrix}
+	&
+	&
+	\begin{pmatrix}
+		a & b\\
+		c & d
+	\end{pmatrix}
+	&
+	&
+	\begin{Bmatrix}
+		a & b\\
+		c & d
+	\end{Bmatrix}
+	&
+	&
+	\begin{bmatrix}
+		a & b\\
+		c & d
+	\end{bmatrix}
+	&
+	&
+	\begin{vmatrix}
+		a & b\\
+		c & d
+	\end{vmatrix}
+	&
+	&
+	\begin{Vmatrix}
+		a & b\\
+		c & d
+	\end{Vmatrix}
+\end{align*}
+%
+The \textsf{memoir} class defines the \texttt{array}\footnote{Also see the \textsf{array} package if you're not using \textsf{memoir}} environment:
+\begin{align*}
+	&
+	\begin{array}{cc}
+		a & b \\
+		c & d \\
+	\end{array}
+	&
+	&
+	\begin{array}({cc})
+		a & b \\
+		c & d \\
+	\end{array}
+	&
+	&
+	\begin{array}|{cc}|
+		a & b \\
+		c & d \\
+	\end{array}
+	&
+	&
+	\begin{array}\{{cc}\}
+		a & b \\
+		c & d \\
+	\end{array}
+\end{align*}
+%
+In both cases, the various enclosed matrices or arrays are simply shorthand ways of wrapping the naked environment with \verb|\left(...\right)| (or whatever delimiter) pairs. The \texttt{array} environment is more flexible because it supports the same column formatting arguments as the \texttt{tabular} environment.
+\end{document}
