@@ -1,0 +1,15 @@
+LaTeX Templates - READ ME
+
+These documents are designed as modular LaTeX code snippets for insertion into documents via TeXShop's and iTeXMac's Templates menu. They are fairly verbose, so you will probably wish to edit out some of the comments in them once you know what the code is doing (if you don't already).
+
+To install them in TeXShop, put them in the following folder:
+~/Library/TeXShop/Templates/
+
+To install them in iTeXMac, place them in:
+~/Library/Application Support/iTeXMac/Templates/LaTeX/
+
+(~/Library/ is the Library folder within your Home folder.)
+
+Please report comments/suggestions/critique on the TeX on Mac OS X Mailing List.
+
+2004 Will Robertson
